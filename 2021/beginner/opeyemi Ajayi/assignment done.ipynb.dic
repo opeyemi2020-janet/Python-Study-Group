@@ -1,0 +1,177 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "time = float(input(\"Input time in seconds: \"))\n",
+    "day = time // (24 * 3600)\n",
+    "time = time % (24 * 3600)\n",
+    "hour = time // 3600\n",
+    "time %= 3600\n",
+    "minutes = time // 60\n",
+    "time %= 60\n",
+    "seconds = time\n",
+    "print(\"d:h:m:s-> %d:%d:%d:%d\" % (day, hour, minutes, seconds))\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "eight = float(input('What is your weight? (Kg) '))\n",
+    "height = float(input('What is your height? (Mtr) '))\n",
+    "bmi = weight/(height*height)\n",
+    "\n",
+    "if bmi <= 18.5:\n",
+    "    print('Your BMI is', bmi, 'which means you are underweight')\n",
+    "\n",
+    "elif 18.5 < bmi < 25:\n",
+    "    print('Your BMI is', bmi,'which means you are normal')\n",
+    "\n",
+    "elif 25 < bmi < 30:\n",
+    "    print('your BMI is', bmi,' which means you are overweight')\n",
+    "\n",
+    "elif bmi > 30:\n",
+    "    print('Your BMI is', bmi,'which means you are obese')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "number = int(input('Please enter a pocket number in the range of 0 through 36: '))\n",
+    "\n",
+    "if number == 0:\n",
+    "    print('Green')\n",
+    "elif number >= 1 and number <= 10:\n",
+    "    if number % 2 != 0:\n",
+    "        print('Red')\n",
+    "    else:\n",
+    "        print('Black')\n",
+    "elif number >= 11 and number <= 18:\n",
+    "    if number % 2 != 0:\n",
+    "        print('Black')\n",
+    "    else:\n",
+    "        print('Red')\n",
+    "elif number >= 19 and number <= 28:\n",
+    "    if number % 2 != 0:\n",
+    "        print('Red')\n",
+    "    else:\n",
+    "        print('Black')\n",
+    "elif number >= 29 and number <= 36:\n",
+    "    if number % 2 != 0:\n",
+    "        print('Black')\n",
+    "    else:\n",
+    "        print('Red')\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "for row in range (6):\n",
+    "    print(\"a\",end\" \", sep\" \")\n",
+    "    for spaces in range (row):\n",
+    "        print(\" \", end\" \", sep\" \")\n",
+    "        print(\"a\", sep\" \")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "current tuition = 8000\n",
+    "checker = 2.2/100\n",
+    "year = 10\n",
+    "increase_percentage = tuition * checker\n",
+    "new_tuition = (tuition + increase_percentage)\n",
+    "for year in range (1, year+1):\n",
+    "    print(f'year {year}/\n",
+    "         Tuition fee ')\n",
+    "          print( (new_tuition * year\n",
+    "                 ))\n",
+    "          print( '\\n')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "total_time = 0.0\n",
+    "lap_time = []\n",
+    "run_time = (int(input('Enter the number laps\n",
+    "                      you ran:')))\n",
+    "                      for run_time in range(i,run_time+1):\n",
+    "                      lap_time=(float(input(f'Enter the number\n",
+    "                                           of times for lap[run_time]: )))\n",
+    "                      total_time= total_time + lap_time\n",
+    "                      lap_time_list.append(lap_time)\n",
+    "                      avg_time =total_time|lap_time\n",
+    "                      f_lap = min(lap_time_list)\n",
+    "                      s_lap = max(lap_time_list)\n",
+    "                      print('your lapse fastest is'\n",
+    "                            f_lap\n",
+    "                            print('your lapse slowest is'\n",
+    "                                 /s_lap)\n",
+    "                            print('your average lapse is'\n",
+    "                                 /avg_time)\n",
+    "                            print('your total runtime is'\n",
+    "                                 / total_time)\n",
+    "                      "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
